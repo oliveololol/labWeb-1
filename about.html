@@ -11,17 +11,19 @@
 
 <meta name="author" content="Ivan Kovalov">
 
+<link rel="stylesheet" href="styles.css">
+
 <title>Про мене — Портфоліо</title>
 
 </head>
 
-<body>
+<body id="top">
 
-<header>
+<header class="site-header">
 
 <h1>Про мене</h1>
 
-<nav>
+<nav class="main-nav">
 
 <ul>
 
@@ -37,7 +39,7 @@
 
 <main>
 
-<section>
+<section class="content-card">
 
 <h2>Освіта</h2>
 
@@ -46,6 +48,8 @@
 </p>
 
 <h2>Навички</h2>
+
+<div class="table-wrapper">
 
 <table border="1">
 
@@ -81,6 +85,8 @@
 
 </table>
 
+</div>
+
 <h2>Факти про мене</h2>
 
 <dl>
@@ -99,11 +105,16 @@
 
 </dl>
 
-<figure>
+<figure class="profile-figure">
 
-<img src="image/image2.webp"
+<img
+src="image/image2.webp"
 width="300"
 alt="Я">
+
+<span class="profile-badge">
+Swift
+</span>
 
 </figure>
 
@@ -121,7 +132,9 @@ alt="Я">
 
 </main>
 
-<footer>
+<a href="#top" class="back-to-top">↑</a>
+
+<footer class="site-footer">
 
 <p>© 2026 Ivan Kovalov</p>
 

@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Головна сторінка портфоліо">
-    <meta name="author" content="Ivan Kovalov">
-    <title>Головна — Портфоліо</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Головна сторінка портфоліо">
+
+<meta name="author" content="Ivan Kovalov">
+
+<link rel="stylesheet" href="styles.css">
+
+<title>Головна — Портфоліо</title>
+
 </head>
 
-<body>
+<body id="top">
 
-<header>
+<header class="site-header">
 
 <h1>Ivan Kovalov</h1>
 
-<nav>
+<nav class="main-nav">
+
 <ul>
+
 <li><a href="index.html">Головна</a></li>
 <li><a href="about.html">Про мене</a></li>
 <li><a href="contacts.html">Контакти</a></li>
+
 </ul>
+
 </nav>
 
 </header>
 
 <main>
 
-<section>
+<section id="hero" class="content-card">
 
 <h2>Ласкаво просимо!</h2>
 
@@ -40,7 +53,7 @@
 </p>
 
 <blockquote>
-"Навчання ніколи не закінчується."
+Навчання ніколи не закінчується.
 </blockquote>
 
 <h3>Мої цілі</h3>
@@ -52,11 +65,16 @@
 <li>Стати Front-end Developer</li>
 </ul>
 
-<figure>
+<figure class="profile-figure">
 
-<img src="image/image1.webp"
+<img
+src="image/image1.webp"
 width="250"
 alt="Фото автора">
+
+<span class="profile-badge">
+iOS Developer
+</span>
 
 <figcaption>
 Моє фото
@@ -78,11 +96,14 @@ alt="Фото автора">
 
 </main>
 
-<footer>
+<a href="#top" class="back-to-top">↑</a>
+
+<footer class="site-footer">
 
 <p>© 2026 Ivan Kovalov</p>
 
 </footer>
 
 </body>
+
 </html>
