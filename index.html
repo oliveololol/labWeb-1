@@ -17,19 +17,27 @@
 
 </head>
 
-<body id="top">
+<body id="top" class="page">
 
-<header class="site-header">
+<header class="site-header header">
 
 <h1>Ivan Kovalov</h1>
 
 <nav class="main-nav">
 
-<ul>
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-<li><a href="index.html">Головна</a></li>
-<li><a href="about.html">Про мене</a></li>
-<li><a href="contacts.html">Контакти</a></li>
+<label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
+<span></span>
+<span></span>
+<span></span>
+</label>
+
+<ul class="nav-list">
+
+<li><a href="index.html" class="nav-link">Головна</a></li>
+<li><a href="about.html" class="nav-link">Про мене</a></li>
+<li><a href="contacts.html" class="nav-link">Контакти</a></li>
 
 </ul>
 
@@ -37,7 +45,7 @@
 
 </header>
 
-<main>
+<main class="content">
 
 <section id="hero" class="content-card">
 
@@ -84,7 +92,9 @@ iOS Developer
 
 </section>
 
-<aside>
+</main>
+
+<aside class="sidebar">
 
 <h3>Цікавий факт</h3>
 
@@ -94,11 +104,9 @@ iOS Developer
 
 </aside>
 
-</main>
-
 <a href="#top" class="back-to-top">↑</a>
 
-<footer class="site-footer">
+<footer class="site-footer footer">
 
 <p>© 2026 Ivan Kovalov</p>
 
