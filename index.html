@@ -12,7 +12,7 @@
 <meta name="author" content="Ivan Kovalov">
 
 <link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
+
 <title>Головна — Портфоліо</title>
 
 </head>
@@ -92,6 +92,76 @@ iOS Developer
 
 </section>
 
+<section class="todo-app">
+
+    <h2>Task Manager</h2>
+
+    <p class="task-user-info"></p>
+
+    <form class="task-form">
+
+        <input
+            type="text"
+            class="task-input"
+            placeholder="Введіть нове завдання">
+
+        <button
+            type="submit"
+            class="task-add-button"
+            disabled>
+            Додати
+        </button>
+
+    </form>
+
+    <input
+        type="search"
+        class="search-input"
+        placeholder="Пошук завдань">
+
+    <div class="task-filters">
+
+        <button
+            type="button"
+            class="filter-button active"
+            data-filter="all">
+            Всі
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="active">
+            Активні
+        </button>
+
+        <button
+            type="button"
+            class="filter-button"
+            data-filter="completed">
+            Виконані
+        </button>
+
+    </div>
+
+    <p class="active-task-count">
+        Активних завдань: 0
+    </p>
+
+    <p class="task-loader hidden">
+        Завантаження...
+    </p>
+
+    <p class="task-error hidden"></p>
+
+    <p class="task-empty hidden">
+        Завдань не знайдено
+    </p>
+
+    <ul class="task-list"></ul>
+
+</section>
+
 </main>
 
 <aside class="sidebar">
@@ -111,6 +181,9 @@ iOS Developer
 <p>© 2026 Ivan Kovalov</p>
 
 </footer>
+
+<script src="script.js"></script>
+<script src="todo.js"></script>
 
 </body>
 
